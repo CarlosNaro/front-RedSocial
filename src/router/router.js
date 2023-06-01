@@ -3,7 +3,11 @@ import Home from "../views/HomeView.vue";
 // import Signup from "../views/SignupView.vue";
 
 const routes = [
-  { path: "/", name: "Home", component: Home },
+  {
+    path: "/Login",
+    name: "Login",
+    component: () => import("../views/LoginView.vue"),
+  },
 
   {
     path: "/Signup",
@@ -11,16 +15,21 @@ const routes = [
     component: () => import("../views/SignupView.vue"),
   },
 
-  {
-    path: "/Login",
-    name: "Login",
-    component: () => import("../views/LoginView.vue"),
-  },
+  { path: "/", name: "Home", component: Home },
+
   {
     path: "/Feed",
     name: "Feed",
     component: () => import("../views/FeedView.vue"),
   },
+
+  {
+    path: "/Messages",
+    name: "messages",
+    component: () => import("../views/MessagesView.vue"),
+  },
+
+
 ];
 
 const history = createWebHistory();
