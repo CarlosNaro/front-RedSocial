@@ -29,6 +29,12 @@ const routes = [
     component: () => import("../views/MessagesView.vue"),
   },
 
+  {
+    path: "/Search",
+    name: "search",
+    component: () => import("../views/SearchView.vue"),
+  },
+
 
 ];
 
