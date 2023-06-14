@@ -1,11 +1,9 @@
-<script setup>
-
-</script>
 
 <template>
-  
-  <RouterView/>
-  <!-- <router-view /> -->
+  <div class=" bg-slate-100  " >
+    <router-view />
+  </div> 
+    <!-- <RouterView/> -->
 </template>
 
 <style scoped>

@@ -4,34 +4,35 @@ import Home from "../views/HomeView.vue";
 
 const routes = [
   {
-    path: "/Login",
+    path: "/login",
     name: "Login",
     component: () => import("../views/LoginView.vue"),
   },
 
   {
-    path: "/Signup",
+    path: "/signup",
     name: "Signup",
     component: () => import("../views/SignupView.vue"),
   },
 
-  { path: "/", name: "Home", component: Home },
+  { path: "/home", name: "Home", component: Home },
 
+  
   {
-    path: "/Feed",
-    name: "Feed",
+    path: "/",
+    name: "feed",
     component: () => import("../views/FeedView.vue"),
   },
 
   {
-    path: "/Messages",
-    name: "messages",
+    path: "/messages",
+    name: "Messages",
     component: () => import("../views/MessagesView.vue"),
   },
 
   {
-    path: "/Search",
-    name: "search",
+    path: "/search",
+    name: "Search",
     component: () => import("../views/SearchView.vue"),
   },
 

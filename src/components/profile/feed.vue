@@ -1,7 +1,7 @@
 <script setup>
 import profil from "./components/profil.vue";
 import personalStatus from "./components/personalStatus.vue";
-import suggested_people from "./components/suggested_people.vue";
+import suggestedPeople from "./components/suggested-people.vue";
 import menuNotifications from "./components/menuNotifications.vue";
 </script>
 <template>
@@ -31,14 +31,14 @@ import menuNotifications from "./components/menuNotifications.vue";
 </div> -->
   
 
-<div class="flex ">
+<div class="flex p-6">
     <div class="flex-none"> <profil /> </div>
     <div class="grow"> 
         <personalStatus />
         <menuNotifications/>
      </div>
     <div class="flex-none">
-      <suggested_people />
+      <suggestedPeople />
     </div>
 
   </div>
