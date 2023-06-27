@@ -1,6 +1,8 @@
 <script setup></script>
 <template>
-  <div class="flex flex-col lg:flex-row  justify-center gap-10 p-10 bg-slate-100 text-justify">
+  <div class=" h-screen" >
+
+    <div class="flex flex-col lg:flex-row   justify-center gap-10 p-10  text-justify">
     <div
       id="mensaje-login "
       class="flex flex-col h-5/6 lg:w-5/12 bg-white p-10 rounded-lg"
@@ -67,5 +69,7 @@
         </div>
       </form>
     </div>
+    
+  </div>
   </div>
 </template>

@@ -1,6 +1,9 @@
-<script setup></script>
+<script setup>
+
+</script>
 <template>
-  <div class="flex flex-col lg:flex-row  justify-center gap-10 p-10 bg-slate-100 text-justify">
+  <div class=" h-screen " >
+    <div class="flex flex-col lg:flex-row  justify-center gap-10 p-10 bg-slate-100 text-justify">
     <div
       id="mensaje-login "
       class="flex flex-col h-5/6 lg:w-5/12 bg-white p-10 rounded-lg"
@@ -33,7 +36,7 @@
               id="name"
               name="name"
               type="text"
-              autocomplete="email"
+              autocomplete="name"
               placeholder="Your full name"
               class="block w-full px-3 py-2 appearance-none rounded-md border border-gray-300 shadow-sm text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
             />
@@ -51,7 +54,7 @@
               id="email"
               name="email"
               type="email"
-              autocomplete="email"
+              :autocomplete="false"
               placeholder="ejemplo@gmail.com"
               class="block w-full px-3 py-2 appearance-none rounded-md border border-gray-300 shadow-sm text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
             />
@@ -100,5 +103,6 @@
         </div>
       </form>
     </div>
+  </div>
   </div>
 </template>
